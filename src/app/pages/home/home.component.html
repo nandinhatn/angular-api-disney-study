@@ -1,0 +1,13 @@
+<div class="content__big_cards">
+ 
+
+
+
+
+ 
+      <app-big-card *ngFor="let post of teste[0].data" title={{post.name}} photoCover={{post.imageUrl}}
+      [filmsList]="[post.films]"
+      ></app-big-card>
+</div>
+
+

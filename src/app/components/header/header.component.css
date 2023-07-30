@@ -1,0 +1,19 @@
+.container__header{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-bottom: 2px solid #266FB6;
+    margin: 0 20px 0 20px;
+}
+.content__menu >ul{
+    display: flex;
+    list-style: none;
+    gap: 20px;
+    margin-right: 20px;
+}
+.content_menu > li{
+    margin-right: 20px;
+}
+li{
+    cursor: pointer;
+}
