@@ -22,7 +22,8 @@ export class BigCardComponent implements OnInit {
   "Mickey's Magical Christmas: Snowed in at the House of Mouse",
   "Disney Princess Enchanted Tales: Follow Your Dreams",
   "Aladdin (2019 film)"]
-
+   @Input()
+   id:string="0";
    posts:any;
 
    

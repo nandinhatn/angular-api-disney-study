@@ -1,0 +1,61 @@
+a:link{
+    text-decoration: none;
+}
+.container__bigCard{
+    background-color: white;
+    border: 2px solid #266FB6;
+    display: flex;
+    justify-content: center;
+    width: 400px;
+    border-radius: 20px;
+    padding: 15px;
+    margin-top: 50px;
+    
+    
+
+}
+
+.container__films >ul, li{
+    background-color: white;
+    list-style: none;
+}
+.films_title{
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+    background-color: white;
+}
+.container__title{
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+    background-color: rgb(185, 21, 158);
+    color:white;
+    width: 250px;
+    border-radius: 5px;
+    padding: 5px 0 5px 0;
+    margin-top: 5px;
+    margin-left: 5px;
+    font-weight: bold;
+    font-size: 20px;
+}
+.container__photo{
+    background-color: white;
+    
+}
+.container__content{
+   display: flex;
+   flex-direction: column;
+   background-color: white;
+   
+}
+.container__description{
+    background-color: white;
+}
+.container__photo >img{
+    width: 150px;
+    height: 300px;
+    object-fit: cover;
+    border-radius: 20px;
+}
