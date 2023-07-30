@@ -9,6 +9,7 @@ import { FooterComponent } from './components/footer/footer.component';
 import { BigCardComponent } from './components/big-card/big-card.component';
 import { ContactComponent } from './pages/contact/contact.component';
 import { HttpClientModule } from '@angular/common/http';
+import { ContentComponent } from './pages/content/content.component';
 
 @NgModule({
   declarations: [
@@ -18,6 +19,7 @@ import { HttpClientModule } from '@angular/common/http';
     FooterComponent,
     BigCardComponent,
     ContactComponent,
+    ContentComponent,
     
   ],
   imports: [
