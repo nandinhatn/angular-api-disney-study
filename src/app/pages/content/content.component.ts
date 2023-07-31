@@ -16,6 +16,9 @@ export class ContentComponent implements OnInit {
   name:string=""
   private id: string | null="0"
   posts:any= []
+  filmsList:string[]=[]
+  showsList:string[]=[]
+  shortFilms:string[]=[]
   
  
 
@@ -33,9 +36,12 @@ export class ContentComponent implements OnInit {
   setValuesToComponent(id:string | null){
 /*     const result = dataFake.filter(article => article.id==id)[0] */
     const result = this.posts[0].data.filter((el: { _id: string | null })=> el._id==id)[0]
-    console.log('res',result.name)
+
     this.name= result.name
     this.photoCover= result.imageUrl
+    this.filmsList=result.films
+    this.showsList= result.tvShows
+    this.shortFilms=result.shortFilms
 
     
 

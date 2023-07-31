@@ -1,7 +1,23 @@
 <div class="content__contact">
     <div>
-        <h1>Fernanda Nogueira</h1>
-        <p>Programadora FrontEnd</p>
+        <h1>{{name}}</h1>
+        <img src={{photoCover}}>
+        <p>{{email}}</p>
+        <p></p>
+        <p>{{location}}</p>
+        <p>{{job}}</p>
+        <p>Languages</p>
+        <div>
+            <ul>
+                <li *ngFor="let item of languages | keyvalue">{{item.value}}</li>
+
+            </ul>
+        </div>
+        <p>Education</p>
+        <ul>
+            <li *ngFor="let item of education  | keyvalue"> {{}}</li>
+           
+        </ul>
         <p> Formação em UX Designer pela Coursera - Certificação Google</p>
 
         <p>Cursando 5º Semestre em Engenharia de Software na Universidade Anhanguera</p>
@@ -21,6 +37,9 @@
                 Conhecimentos sólidos em React
             </li>
             <li>
+                Conhecimentos em Node
+            </li>
+            <li>
                 Estudando React Native 
             </li>
             <li>
@@ -29,6 +48,7 @@
             <li>
                 Estudando Typescript
             </li>
+            
 
         </ul>
     </div>

@@ -8,7 +8,7 @@
     <div class="container__content">
         <div class="container__title">{{title}}</div>
         <div class="container__description">
-            <div class="container__films">
+            <div class="container__films" *ngIf="filmsList[0].length>0" >
                 <div  class="films_title"><u>Filmes</u></div>
                 <ul>
                    
@@ -16,6 +16,15 @@
                 </ul>
                 
             </div>
+            <div class="container__films" *ngIf="showsList[0].length>0">
+                <div  class="films_title"><u>Shows de TV</u></div>
+                <ul>
+                   
+                    <li *ngFor="let item of showsList">{{item}}</li>
+                </ul>
+                
+            </div>
+
     </div>
     
         

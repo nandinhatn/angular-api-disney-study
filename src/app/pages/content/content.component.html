@@ -1,3 +1,6 @@
+<div class="container">
+
+
 <div class="container__bigCard">
     <div class="container__photo">
         <img src={{photoCover}}>
@@ -6,21 +9,35 @@
         <div class="container__title">{{name}}</div>
         <div class="container__description">
             <div class="container__films">
-                <div  class="films_title"><u>Filmes</u></div>
-                <!-- ul>
+                <div  class="films_title" *ngIf="filmsList.length>0"><u>Filmes</u></div>
+               <ul>
                    
                     <li *ngFor="let item of filmsList">{{item}}</li>
-                </ul> -->
+                </ul> 
                 
             </div>
+            <div  class="films_title" *ngIf="showsList.length>0"><u>Shows</u>
+            </div>
+               <ul>
+                   
+                    <li *ngFor="let item of showsList">{{item}}</li>
+                </ul> 
+                
+                <div  class="films_title" *ngIf="shortFilms.length>0"><u>Short Films</u>
+                </div>
+                   <ul>
+                       
+                        <li *ngFor="let item of shortFilms">{{item}}</li>
+                    </ul> 
+
+            </div>
+            
     </div>
     
         
     </div>
-</div>
-<div>
- 
-</div>
+
+
 
 
 
@@ -31,3 +48,4 @@
        << Voltar
     </a>
     </p>
+</div>

@@ -13,7 +13,7 @@ export class HomeComponent implements OnInit {
   
   ngOnInit(): void {
 
-   this.setValuesToComponent()
+
    this.service.getPosts().subscribe(response=>{
      this.teste.push(response)
    

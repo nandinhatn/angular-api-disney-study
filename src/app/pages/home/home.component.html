@@ -6,7 +6,7 @@
 
  
       <app-big-card  *ngFor="let post of teste[0].data" id={{post._id}} title={{post.name}} photoCover={{post.imageUrl}}
-      [filmsList]="[post.films]"
+      [filmsList]="[post.films]" [showsList]="[post.tvShows]"
       ></app-big-card>
 </div>
 

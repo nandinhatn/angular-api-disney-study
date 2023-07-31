@@ -16,16 +16,12 @@ export class BigCardComponent implements OnInit {
   @Input()
   link:string = "https://disney.fandom.com/wiki/Abu"
   @Input()
-  filmsList:string[]=["Aladdin (film)",
-  "The Return of Jafar",
-  "Aladdin and the King of Thieves",
-  "Mickey's Magical Christmas: Snowed in at the House of Mouse",
-  "Disney Princess Enchanted Tales: Follow Your Dreams",
-  "Aladdin (2019 film)"]
+  filmsList:string[]=[]
    @Input()
    id:string="0";
    posts:any;
-
+   @Input()  
+   showsList:string[]=[]
    
 
     getDates(){
@@ -33,6 +29,7 @@ export class BigCardComponent implements OnInit {
    } 
 
   ngOnInit(): void {
+    console.log('filmslist',this.filmsList[0].length)
     this.service.getPosts().subscribe(response=>{
      
       this.posts= response

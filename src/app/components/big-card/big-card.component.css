@@ -8,6 +8,7 @@ a:link{
     width: 400px;
     border-radius: 20px;
     padding: 15px;
+ 
     
     
 
@@ -20,6 +21,7 @@ a:link{
 .films_title{
     display: flex;
     justify-content: center;
+    margin-top: 20px;
     margin-bottom: 20px;
     background-color: white;
 }
